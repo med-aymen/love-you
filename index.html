@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start 2026 with AYMEN</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Page 1: Login -->
+    <div id="loginPage" class="page active">
+        <div class="container">
+            <div class="login-box">
+                <div class="logo-circle">
+                    <span class="logo-text">A</span>
+                </div>
+                <h1 class="main-title">Welcome</h1>
+                <p class="subtitle">Let's get to know each other</p>
+                
+                <form id="loginForm" class="login-form">
+                    <div class="input-group">
+                        <input type="text" id="firstName" required placeholder=" ">
+                        <label for="firstName">First Name</label>
+                        <div class="input-line"></div>
+                    </div>
+                    
+                    <div class="input-group">
+                        <input type="text" id="lastName" required placeholder=" ">
+                        <label for="lastName">Last Name</label>
+                        <div class="input-line"></div>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary">
+                        <span>Continue</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 2: Proposal -->
+    <div id="proposalPage" class="page">
+        <div class="container">
+            <div class="proposal-box">
+                <div class="heart-animation">
+                    <svg width="80" height="80" viewBox="0 0 100 100">
+                        <path d="M50,90 C50,90 10,65 10,40 C10,25 20,15 32.5,15 C40,15 45,20 50,27.5 C55,20 60,15 67.5,15 C80,15 90,25 90,40 C90,65 50,90 50,90 Z" fill="#ff6b9d"/>
+                    </svg>
+                </div>
+                
+                <h1 class="proposal-title">Hey <span id="userName"></span>! 👋</h1>
+                
+                <div class="proposal-content">
+                    <p class="proposal-text">
+                        As we step into 2026, I have a special question for you...
+                    </p>
+                    
+                    <div class="question-box">
+                        <h2>Would you like to start this amazing year with AYMEN as your friend?</h2>
+                    </div>
+                    
+                    <p class="proposal-subtext">
+                        Together, we can make 2026 unforgettable! 🌟
+                    </p>
+                    
+                    <div class="button-group">
+                        <button id="acceptBtn" class="btn-accept">
+                            <span>Yes, I'd love to! 💕</span>
+                        </button>
+                        <button id="maybeBtn" class="btn-maybe">
+                            Maybe later
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 3: Certificate -->
+    <div id="certificatePage" class="page">
+        <div class="container">
+            <div class="certificate-container">
+                <div class="celebration">🎉</div>
+                
+                <h1 class="certificate-title">Yay! Welcome Aboard! 🎊</h1>
+                
+                <p class="certificate-message">
+                    AYMEN loves you very much and is so excited to be your friend throughout 2026!
+                </p>
+                
+                <div class="canvas-wrapper">
+                    <canvas id="certificateCanvas" width="1920" height="1080"></canvas>
+                </div>
+                
+                <div class="button-group">
+                    <button id="downloadBtn" class="btn-download">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M10 13L10 3M10 13L7 10M10 13L13 10M3 17H17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Download Certificate</span>
+                    </button>
+                    
+                    <button id="restartBtn" class="btn-secondary">
+                        Start Over
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
